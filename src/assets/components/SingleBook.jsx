@@ -2,7 +2,7 @@ import { Col, Card } from "react-bootstrap";
 
 const SingleBook = ({ data }) => (
   <>
-    <Col key={"asin: " + data.asin} xs="4" lg="3" className="p-0 mb-3 d-flex justify-content-center cardContainer">
+    <Col xs="4" lg="3" className="p-0 mb-3 d-flex justify-content-center cardContainer">
       <Card style={{ width: "15rem" }}>
         <Card.Img variant="top" src={data.img} className="cardImage" />
         <Card.Body>

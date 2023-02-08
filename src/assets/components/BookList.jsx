@@ -1,9 +1,9 @@
 import { Component } from "react";
-import SingleBook from "./SingleBook";
+import SingleBookAsClass from "./SingleBookAsClass";
 
 class BookList extends Component {
   render() {
-    return this.props.props.map((book) => <SingleBook data={book} />);
+    return this.props.props.map((book, index) => <SingleBookAsClass key={index} data={book} />);
   }
 }
 

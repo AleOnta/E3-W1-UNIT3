@@ -21,7 +21,7 @@ function App() {
           title="Welcome to my library"
           content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quibusdam sint maiores debitis suscipit reprehenderit distinctio!"
         />
-        <Row>
+        <Row className="justify-content-center">
           <BookList props={fantasy} />
         </Row>
       </Container>
