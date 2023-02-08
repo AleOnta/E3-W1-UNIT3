@@ -1,15 +1,30 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-import Home from "./assets/components/Home";
 import NavComponent from "./assets/components/NavComponent";
+import JumbotronComponent from "./assets/components/Jumbotron";
+import BookList from "./assets/components/BookList";
 import FooterComponent from "./assets/components/FooterComponent";
+import { Container, Row } from "react-bootstrap";
+import fantasy from "./assets/data/fantasy.json";
+// import history from "../data/history.json";
+// import horror from "../data/horror.json";
+// import romance from "../data/romance.json";
+// import scifi from "../data/scifi.json";
 
 function App() {
   return (
     <>
       <NavComponent />
-      <Home />
+      <Container>
+        <JumbotronComponent
+          title="Welcome to my library"
+          content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quibusdam sint maiores debitis suscipit reprehenderit distinctio!"
+        />
+        <Row>
+          <BookList props={fantasy} />
+        </Row>
+      </Container>
       <FooterComponent placeholder="email address" />
     </>
   );
