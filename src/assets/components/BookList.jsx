@@ -3,7 +3,7 @@ import SingleBookAsClass from "./SingleBookAsClass";
 
 class BookList extends Component {
   render() {
-    return this.props.props.map((book, index) => <SingleBookAsClass key={index} data={book} />);
+    return this.props.props.map((book) => <SingleBookAsClass key={book.asin} data={book} />);
   }
 }
 
